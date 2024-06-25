@@ -1,0 +1,13 @@
+
+services:
+  api_jwt:
+    build: .
+    ports:
+      - "3030:3030"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.3
+
+networks:
+  micro_service:
+    external: true

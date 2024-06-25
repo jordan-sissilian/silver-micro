@@ -1,0 +1,98 @@
+services:
+  front:
+    build:
+      context: ./silver_micro/
+      dockerfile: Dockerfile
+    ports:  
+      - "80:80"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.2
+
+  api_jwt:
+    build:
+      context: ./service_jwt/
+      dockerfile: Dockerfile
+    ports:
+      - "3030:3030"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.3
+
+  api_auth:
+    build:
+      context: ./service_auth/
+      dockerfile: Dockerfile
+    ports:
+      - "7070:7070"
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: "users"
+      POSTGRES_PASSWORD: "passwords"
+      POSTGRES_DB: "authentification"
+    depends_on:
+      - db
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.4
+
+  db_auth:
+    container_name: db_auth
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: "users"
+      POSTGRES_PASSWORD: "passwords"
+      POSTGRES_DB: "service_auth"
+    volumes:
+      - db_data_auth:/var/lib/postgresql/data
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.5
+
+  service_reservation:
+    container_name: service_reservation
+    build:
+      context: ./service_reservation/
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      APP_ENV: prod
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.7
+
+  db_reservation:
+    container_name: db_reservation
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_DATABASE: your_database_name
+      MYSQL_USER: your_username
+      MYSQL_PASSWORD: your_password
+    ports:
+      - "3307:3307"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.8
+
+  krakend:
+    build:
+      context: ./service_api_gateway/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "8090:8090"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.6
+
+
+networks:
+  micro_service:
+    external: true
+
+volumes:
+  db_data_auth:

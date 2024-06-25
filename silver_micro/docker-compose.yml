@@ -1,0 +1,15 @@
+
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.2
+
+networks:
+  micro_service:
+    external: true

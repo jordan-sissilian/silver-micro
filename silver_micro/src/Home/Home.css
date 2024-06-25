@@ -1,0 +1,22 @@
+
+#home {
+    background-color: rgb(242, 242, 245);
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 70vh;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+}
+
+#body_home {
+    width: 100%;
+}
+

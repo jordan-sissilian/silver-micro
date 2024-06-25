@@ -1,0 +1,42 @@
+
+services:
+  api_auth:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "7070:7070"
+    environment:
+      MONGO_HOST: db_auth
+      MONGO_PORT: 27017
+      MONGO_DB: "auth"
+      JWT_API_URL: http://service_jwt:3030
+    depends_on:
+      - db_auth
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.4
+
+  db_auth:
+    container_name: db_auth
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: "auth"
+    volumes:
+      - mongodb_data_auth:/Users/Jordan/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      micro_service:
+        ipv4_address: 172.18.0.5
+
+networks:
+  micro_service:
+    external: true
+
+volumes:
+  mongodb_data_auth:
+    driver: local

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://www.krakend.io/schema/krakend.json",
+  "version": 3,
+  "name": "SilverMicro - API Gateway",
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "endpoints": [
+    {
+      "endpoint": "/login",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "backend": [
+        {
+          "url_pattern": "/auth/login",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "host": [
+            "http://172.18.0.4:7070"
+          ],
+          "disable_host_sanitize": false,
+          "extra_config": {
+            "github.com/devopsfaith/krakend-cors": {
+              "allow_origins": [
+                "*"
+              ],
+              "allow_methods": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+              ],
+              "allow_headers": [
+                "Content-Type",
+                "Authorization"
+              ],
+              "expose_headers": [
+                "Content-Length",
+                "Content-Type"
+              ],
+              "max_age": "12h",
+              "allow_credentials": true
+            },
+            "github.com/devopsfaith/krakend/proxy": {
+              "headers_to_pass": [
+                "Content-Type"
+              ],
+              "return_error_details": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/register",
+      "method": "POST",
+      "output_encoding": "no-op",
+      "input_headers": [
+        "Content-Type"
+      ],
+      "backend": [
+        {
+          "url_pattern": "/auth/register",
+          "encoding": "no-op",
+          "sd": "static",
+          "method": "POST",
+          "host": [
+            "http://172.18.0.4:7070"
+          ],
+          "disable_host_sanitize": false,
+          "extra_config": {
+            "github.com/devopsfaith/krakend-cors": {
+              "allow_origins": [
+                "*"
+              ],
+              "allow_methods": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+              ],
+              "allow_headers": [
+                "Content-Type",
+                "Authorization"
+              ],
+              "expose_headers": [
+                "Content-Length",
+                "Content-Type"
+              ],
+              "max_age": "12h",
+              "allow_credentials": true
+            },
+            "github.com/devopsfaith/krakend/proxy": {
+              "headers_to_pass": [
+                "Content-Type"
+              ],
+              "return_error_details": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/logout",
+      "method": "POST",
+      "output_encoding": "json",
+      "backend": [
+        {
+          "url_pattern": "/auth/logout",
+          "encoding": "json",
+          "sd": "static",
+          "method": "POST",
+          "host": [
+            "http://172.18.0.4:7070"
+          ],
+          "disable_host_sanitize": false
+        }
+      ]
+    }
+  ],
+  "output_encoding": "json"
+}

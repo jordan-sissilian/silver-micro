@@ -1,0 +1,12 @@
+/Users/jordan/Desktop/silver-micro/service_auth/target/release/deps/libsha2-1b66a92b8192476b.rmeta: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/release/deps/libsha2-1b66a92b8192476b.rlib: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/release/deps/sha2-1b66a92b8192476b.d: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs
+
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs:

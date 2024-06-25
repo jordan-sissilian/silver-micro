@@ -1,0 +1,290 @@
+#body_home {
+    width: 100%;
+    height: 100%;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+}
+
+.imgTable {
+    position: absolute;
+    z-index: 0;
+    width: auto;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .imgTable {
+        width: 100%;
+    }
+}
+
+#body_home a {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 20px;
+}
+
+#body_home a:hover {
+    text-decoration: underline;
+}
+
+
+#retour {
+    width: 100%;
+    height: 5%;
+    text-align: left;
+}
+
+#retour a {
+    margin-left: 20px;
+    width: 50px;
+}
+
+#table_container {
+    width: 100%;
+    height: 7%;
+    margin-bottom: 0.5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table {
+    width: 200px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heur {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2%;
+    margin-top: 0;
+}
+
+#heur button {
+    margin: 5px;
+}
+
+#couvert button,
+#table button {
+    border-radius: 25px !important;
+    width: 25px;
+    height: 25px;
+    text-align: center !important;
+}
+
+.popup-content button,
+#valide,
+#couvert button,
+#table button,
+#heur button {
+    background-color: #d2d2d7;
+    color: rgba(65, 65, 68, 0.865);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s, color 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.popup-content button:hover,
+#couvert button:hover,
+#table button:hover,
+#heur button:hover {
+    background-color: rgb(223, 222, 228);
+    color: rgb(65, 65, 68);
+}
+
+#heur button,
+#valide {
+    padding: 5px 10px;
+}
+
+#valide {
+    background-color: #4CAF50;
+    color: #f0f0f0;
+    margin: 10px;
+}
+
+#valide:hover {
+    background-color: #45a049b6;
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .pc-only {
+        display: none;
+    }
+
+    #images {
+        height: 35%;
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgTable {
+        width: 70%;
+        height: 70%;
+    }
+
+    #date {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #images {
+        height: 40%;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    #date {
+        width: 100%;
+        height: 5%;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+}
+
+#chooseCouvert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#couvert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#couvert h6 {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+#nbCouver {
+    width: 100px;
+}
+
+.selected {
+    border: 1px solid rgba(137, 137, 137, 0.6) !important;
+    color: #000000ee !important;
+    background-color: rgba(223, 222, 228, 0.9) !important;
+}
+
+.indispo {
+    border: 1px solid rgba(255, 255, 255, 0.481) !important;
+    color: #8d8d8ddd !important;
+    text-decoration: line-through;
+}
+
+
+#error {
+    color: red;
+    margin: 0;
+    height: 20px;
+}
+
+#error p {
+    font-size: 12px;
+}
+
+#emailInvite {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.customDatepicker {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 130px;
+    text-align: center;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.popup-content button {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#infoQr {
+    margin: 0;
+}

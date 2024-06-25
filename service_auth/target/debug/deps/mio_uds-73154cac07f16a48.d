@@ -1,0 +1,11 @@
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/libmio_uds-73154cac07f16a48.rmeta: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/libmio_uds-73154cac07f16a48.rlib: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/mio_uds-73154cac07f16a48.d: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs:

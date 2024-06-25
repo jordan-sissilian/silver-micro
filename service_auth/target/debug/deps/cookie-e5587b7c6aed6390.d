@@ -1,0 +1,12 @@
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/libcookie-e5587b7c6aed6390.rmeta: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/builder.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/parse.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/jar.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/delta.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/draft.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/libcookie-e5587b7c6aed6390.rlib: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/builder.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/parse.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/jar.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/delta.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/draft.rs
+
+/Users/jordan/Desktop/silver-micro/service_auth/target/debug/deps/cookie-e5587b7c6aed6390.d: /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/lib.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/builder.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/parse.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/jar.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/delta.rs /Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/draft.rs
+
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/lib.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/builder.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/parse.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/jar.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/delta.rs:
+/Users/jordan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cookie-0.14.4/src/draft.rs:
